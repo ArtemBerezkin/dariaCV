@@ -75,3 +75,78 @@
   object-position: center top;
   margin-top: -30%;
 }
+
+@media (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    gap: 32px;
+  }
+
+  .textLeft {
+    font-size: 22px;
+    text-align: center;
+    max-width: 560px;
+    order: 1;
+  }
+
+  .photoWrapper {
+    order: 2;
+    width: 280px;
+    height: 400px;
+  }
+
+  .cardBack1 {
+    width: 220px;
+    height: 310px;
+  }
+
+  .cardBack2 {
+    width: 220px;
+    height: 310px;
+  }
+
+  .card {
+    width: 220px;
+    height: 310px;
+  }
+
+  .textRight {
+    font-size: 20px;
+    text-align: center;
+    justify-self: center;
+    order: 3;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro {
+    padding: 48px 0 60px;
+    min-height: unset;
+  }
+
+  .textLeft {
+    font-size: 18px;
+  }
+
+  .photoWrapper {
+    width: 220px;
+    height: 320px;
+  }
+
+  .cardBack1,
+  .cardBack2 {
+    width: 180px;
+    height: 260px;
+  }
+
+  .card {
+    width: 180px;
+    height: 260px;
+  }
+
+  .textRight {
+    font-size: 16px;
+  }
+}

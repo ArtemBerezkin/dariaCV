@@ -37,3 +37,27 @@
 .link:hover {
   opacity: 0.6;
 }
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 44px;
+  }
+
+  .link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 48px 0;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .link {
+    font-size: 16px;
+  }
+}

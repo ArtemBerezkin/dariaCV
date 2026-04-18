@@ -54,3 +54,40 @@
 .navLink:hover {
   opacity: 0.6;
 }
+
+@media (max-width: 1024px) {
+  .inner {
+    height: 64px;
+  }
+
+  .navLink {
+    font-size: 18px;
+  }
+
+  .nav {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner {
+    height: 56px;
+  }
+
+  .logoText {
+    font-size: 13px;
+  }
+
+  .logoIcon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .navLink {
+    font-size: 14px;
+  }
+
+  .nav {
+    gap: 16px;
+  }
+}

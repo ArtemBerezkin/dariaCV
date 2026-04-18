@@ -41,3 +41,27 @@
   font-family: var(--font-serif);
   font-weight: 400;
 }
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 44px;
+  }
+
+  .item {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 0;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .item {
+    font-size: 15px;
+  }
+}

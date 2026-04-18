@@ -101,3 +101,42 @@
   right: 40px;
   transform: rotate(37.36deg);
 }
+
+@media (max-width: 1024px) {
+  .card {
+    padding: 48px 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .title {
+    font-size: 44px;
+  }
+
+  .text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 0 60px;
+  }
+
+  .card {
+    padding: 40px 24px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 17px;
+  }
+}
