@@ -1,11 +1,13 @@
 import styles from './AboutMe.module.css';
 
+const base = import.meta.env.BASE_URL;
+
 const photos = [
-  { src: 'public/about/photo1.jpg', alt: 'Фото 1', className: 'photoTopLeft' },
-  { src: 'public/about/photo2.jpg', alt: 'Фото 2', className: 'photoTopRight' },
-  { src: 'public/about/photo3.jpg', alt: 'Фото 3', className: 'photoBottomLeft1' },
-  { src: 'public/about/photo4.jpg', alt: 'Фото 4', className: 'photoBottomRight1' },
-  { src: 'public/about/photo5.jpg', alt: 'Фото 5', className: 'photoBottomRight2' },
+  { src: `${base}about/photo1.jpg`, alt: 'Фото 1', className: 'photoTopLeft' },
+  { src: `${base}about/photo2.jpg`, alt: 'Фото 2', className: 'photoTopRight' },
+  { src: `${base}about/photo3.jpg`, alt: 'Фото 3', className: 'photoBottomLeft1' },
+  { src: `${base}about/photo4.jpg`, alt: 'Фото 4', className: 'photoBottomRight1' },
+  { src: `${base}about/photo5.jpg`, alt: 'Фото 5', className: 'photoBottomRight2' },
 ];
 
 const AboutMe = () => (

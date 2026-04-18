@@ -1,6 +1,6 @@
 import styles from './Intro.module.css';
 
-const heroPhoto = 'public/hero.jpg';
+const heroPhoto = `${import.meta.env.BASE_URL}hero.jpg`;
 
 const Intro = () => (
   <section className={styles.intro}>

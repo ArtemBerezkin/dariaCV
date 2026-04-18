@@ -1,7 +1,9 @@
+const base = import.meta.env.BASE_URL;
+
 const projects = [
   {
     id: 1,
-    image: 'public/projects/opera.jpg',
+    image: `${base}projects/opera.jpg`,
     title: 'Редизайн сайта Opera national de Paris',
     task: 'Предложить более функциональную концепцию дизайна театра Парижской национальной оперы.',
     results: [
@@ -12,7 +14,7 @@ const projects = [
   },
   {
     id: 2,
-    image: 'public/projects/edera.jpg',
+    image: `${base}projects/edera.jpg`,
     title: 'Редизайн сайта Edera School',
     task: 'Предложить более функциональную концепцию дизайна международной онлайн-школы.',
     results: [
@@ -23,7 +25,7 @@ const projects = [
   },
   {
     id: 3,
-    image: 'public/projects/mobile.jpg',
+    image: `${base}projects/mobile.jpg`,
     title: 'Мобильное приложение',
     task: 'Предложить более функциональную концепцию дизайна театра Парижской национальной оперы.',
     results: [
