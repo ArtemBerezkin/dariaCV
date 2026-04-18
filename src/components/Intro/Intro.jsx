@@ -1,6 +1,6 @@
 import styles from './Intro.module.css';
 
-const heroPhoto = '/hero.jpg';
+const heroPhoto = 'public/hero.jpg';
 
 const Intro = () => (
   <section className={styles.intro}>

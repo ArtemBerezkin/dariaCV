@@ -1,7 +1,7 @@
 const projects = [
   {
     id: 1,
-    image: '/projects/opera.jpg',
+    image: 'public/projects/opera.jpg',
     title: 'Редизайн сайта Opera national de Paris',
     task: 'Предложить более функциональную концепцию дизайна театра Парижской национальной оперы.',
     results: [
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     id: 2,
-    image: '/projects/edera.jpg',
+    image: 'public/projects/edera.jpg',
     title: 'Редизайн сайта Edera School',
     task: 'Предложить более функциональную концепцию дизайна международной онлайн-школы.',
     results: [
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     id: 3,
-    image: '/projects/mobile.jpg',
+    image: 'public/projects/mobile.jpg',
     title: 'Мобильное приложение',
     task: 'Предложить более функциональную концепцию дизайна театра Парижской национальной оперы.',
     results: [
