@@ -37,6 +37,10 @@ module.exports = {
     // Import
     'import/extensions': ['error', 'ignorePackages', { jsx: 'always', js: 'always' }],
     'import/no-unresolved': ['error', { ignore: ['^swiper'] }],
+    'import/no-extraneous-dependencies': [
+      'error',
+      { devDependencies: ['vite.config.*', '**/*.config.*'] },
+    ],
 
     // Style
     'no-console': 'warn',
