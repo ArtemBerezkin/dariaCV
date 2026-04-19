@@ -19,42 +19,48 @@
   line-height: 1.2;
   color: var(--color-text);
   max-width: 474px;
+  animation: fadeInLeft 0.9s ease 0.3s both;
 }
 
 .textRight {
   font-family: var(--font-serif);
   font-size: 26px;
   font-weight: 400;
-  /* line-height: 1.4; */
   color: var(--color-text);
   text-align: right;
   max-width: 368px;
   justify-self: end;
   align-self: end;
+  animation: fadeInRight 0.9s ease 0.5s both;
 }
 
 .photoWrapper {
   position: relative;
   width: 500px;
   height: 500px;
+  animation: fadeUp 0.9s ease 0.1s both;
 }
 
+/* cardBack1 — переменная --tx обновляется в брейкпойнтах */
 .cardBack1 {
+  --tx: -120px;
   position: absolute;
   width: 500px;
   height: 500px;
   border: 1px solid var(--color-text);
   border-radius: 20px;
-  transform: rotate(-17deg) translateX(-120px) translateY(20px);
+  animation: rockLeft 6s ease-in-out infinite;
 }
 
 .cardBack2 {
+  --tx: 120px;
   position: absolute;
   width: 500px;
   height: 500px;
   border: 1px solid var(--color-text);
   border-radius: 20px;
-  transform: rotate(18deg) translateX(120px) translateY(20px);
+  animation: rockRight 6s ease-in-out infinite;
+  animation-delay: -3s;
 }
 
 .card {
@@ -67,6 +73,7 @@
   height: 500px;
   border-radius: 20px;
   overflow: hidden;
+  animation: float 5s ease-in-out infinite;
 }
 
 .photo {
@@ -106,6 +113,40 @@
   flex: 1;
 }
 
+/* ── Анимации ─────────────────────────────── */
+
+@keyframes rockLeft {
+  0%, 100% { transform: rotate(-17deg) translateX(var(--tx)) translateY(20px); }
+  50%       { transform: rotate(-13deg) translateX(var(--tx)) translateY(20px); }
+}
+
+@keyframes rockRight {
+  0%, 100% { transform: rotate(18deg) translateX(var(--tx)) translateY(20px); }
+  50%       { transform: rotate(14deg) translateX(var(--tx)) translateY(20px); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(-50%, calc(-50% + 40px)); }
+  50%       { transform: translate(-50%, calc(-50% + 30px)); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ── Брейкпойнты ──────────────────────────── */
+
 @media (max-width: 1640px) {
   .inner {
     grid-template-columns: 1fr;
@@ -130,15 +171,15 @@
   }
 
   .cardBack1 {
+    --tx: -90px;
     width: 380px;
     height: 380px;
-    transform: rotate(-17deg) translateX(-90px) translateY(20px);
   }
 
   .cardBack2 {
+    --tx: 90px;
     width: 380px;
     height: 380px;
-    transform: rotate(18deg) translateX(90px) translateY(20px);
   }
 
   .card {
@@ -153,6 +194,7 @@
     align-items: stretch;
     width: 100%;
     padding-top: 40px;
+    animation: fadeUp 0.9s ease 0.5s both;
   }
 }
 
@@ -175,15 +217,15 @@
   }
 
   .cardBack1 {
+    --tx: -80px;
     width: 360px;
     height: 360px;
-    transform: rotate(-17deg) translateX(-80px) translateY(20px);
   }
 
   .cardBack2 {
+    --tx: 80px;
     width: 360px;
     height: 360px;
-    transform: rotate(18deg) translateX(80px) translateY(20px);
   }
 
   .card {
@@ -224,15 +266,15 @@
   }
 
   .cardBack1 {
+    --tx: -60px;
     width: 260px;
     height: 260px;
-    transform: rotate(-17deg) translateX(-60px) translateY(20px);
   }
 
   .cardBack2 {
+    --tx: 60px;
     width: 260px;
     height: 260px;
-    transform: rotate(18deg) translateX(60px) translateY(20px);
   }
 
   .card {
