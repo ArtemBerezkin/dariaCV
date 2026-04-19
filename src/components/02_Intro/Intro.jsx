@@ -20,6 +20,16 @@ const Intro = () => (
       <p className={styles.textRight}>
         Работаю в FinTech и EdTech продуктах с B2B и B2C сегментами
       </p>
+
+      <div className={styles.textsRow}>
+        <p className={styles.textRowLeft}>
+          Привет! Я UX/UI дизайнер веб и мобильных приложений с большим опытом в службе поддержке.
+        </p>
+        <div className={styles.divider} />
+        <p className={styles.textRowRight}>
+          Работаю в FinTech и EdTech продуктах с B2B и B2C сегментами
+        </p>
+      </div>
     </div>
   </section>
 );
